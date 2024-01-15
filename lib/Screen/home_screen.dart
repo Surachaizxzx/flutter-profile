@@ -9,8 +9,7 @@ class HomeScreen extends StatelessWidget {
       width: double.infinity,
       height: double.infinity,
       color: Colors.amber,
-      child:const Center(child:Text('test')),
-      
+      child: const Center(child: Text('test')),
     );
-}
+  }
 }

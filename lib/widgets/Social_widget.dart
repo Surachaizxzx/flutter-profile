@@ -59,7 +59,7 @@ class Socialwidget extends StatelessWidget {
               style: TextStyle(fontSize: 18, color: Colors.black),
             ),
           ],
-        )
+        ),
       ],
     );
   }
