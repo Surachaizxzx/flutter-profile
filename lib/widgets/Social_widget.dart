@@ -20,11 +20,11 @@ class Socialwidget extends StatelessWidget {
           children: [
             Text(
               '36',
-              style: TextStyle(fontSize: 18, color: Colors.black),
+              style: TextStyle(fontSize: 10, color: Colors.black),
             ),
             Text(
               'Post',
-              style: TextStyle(fontSize: 18, color: Colors.black),
+              style: TextStyle(fontSize: 10, color: Colors.black),
             ),
           ],
         ),
@@ -37,11 +37,11 @@ class Socialwidget extends StatelessWidget {
           children: [
             Text(
               '35K',
-              style: TextStyle(fontSize: 18, color: Colors.black),
+              style: TextStyle(fontSize: 10, color: Colors.black),
             ),
             Text(
               'Following',
-              style: TextStyle(fontSize: 18, color: Colors.black),
+              style: TextStyle(fontSize: 10, color: Colors.black),
             ),
           ],
         ),
@@ -52,11 +52,11 @@ class Socialwidget extends StatelessWidget {
           children: [
             Text(
               '15K',
-              style: TextStyle(fontSize: 18, color: Colors.black),
+              style: TextStyle(fontSize: 10, color: Colors.black),
             ),
             Text(
               'Followers',
-              style: TextStyle(fontSize: 18, color: Colors.black),
+              style: TextStyle(fontSize: 10, color: Colors.black),
             ),
           ],
         ),

@@ -11,7 +11,7 @@ class NameWidget extends StatelessWidget {
       "Surachai subnalsing",
       style: TextStyle(
         fontFamily: 'Poppins',
-        fontSize: 24,
+        fontSize: 10,
         color: Colors.blue,
         fontWeight: FontWeight.w700,
       ),

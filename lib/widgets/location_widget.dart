@@ -13,14 +13,14 @@ class LocationWidget extends StatelessWidget {
       children: [
         Icon(
           Icons.location_pin,
-          size: 24,
+          size: 10,
           color: Colors.pink,
         ),
         Text(
           "1518.KMUTNB.Bangsue.Bangkok",
           style: TextStyle(
             fontFamily: 'Poppins',
-            fontSize: 20,
+            fontSize: 10,
             color: Colors.brown,
             fontWeight: FontWeight.w700,
           ),

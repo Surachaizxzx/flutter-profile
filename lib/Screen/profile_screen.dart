@@ -3,7 +3,6 @@ import 'package:flutter_beginner/widgets/Social_widget.dart';
 import 'package:flutter_beginner/widgets/avatar_widget.dart';
 import 'package:flutter_beginner/widgets/location_widget.dart';
 import 'package:flutter_beginner/widgets/name_widget.dart';
-import 'package:flutter_beginner/widgets/photo_widget.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -16,7 +15,7 @@ class ProfileScreen extends StatelessWidget {
         leading: const Icon(
           Icons.menu,
           color: Colors.black,
-          size: 24,
+          size: 18,
         ),
         title: const Text("My proflie"),
         actions: const [
@@ -24,7 +23,7 @@ class ProfileScreen extends StatelessWidget {
             padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
             child: Icon(
               Icons.search,
-              size: 24,
+              size: 18,
               color: Colors.white,
             ),
           ),
@@ -32,10 +31,10 @@ class ProfileScreen extends StatelessWidget {
             padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
             child: Icon(
               Icons.person_add,
-              size: 24,
+              size: 18,
               color: Colors.white,
             ),
-          )
+          ),
         ],
       ),
       body: Column(
@@ -50,11 +49,11 @@ class ProfileScreen extends StatelessWidget {
           ),
           const AvatarWidget(),
           const SizedBox(
-            height: 20,
+            height: 10,
           ),
           const NameWidget(),
           const SizedBox(
-            height: 20,
+            height: 10,
           ),
           const LocationWidget(),
           const SizedBox(
@@ -64,34 +63,109 @@ class ProfileScreen extends StatelessWidget {
             'Photography is the story I fail to but into words.',
             style: TextStyle(
               fontFamily: 'Poppins',
-              fontSize: 20,
+              fontSize: 10,
               color: Colors.black,
               fontWeight: FontWeight.w500,
             ),
           ),
           const SizedBox(
-            height: 20,
+            height: 10,
           ),
           const Socialwidget(),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              Padding(padding: EdgeInsets.all(10.0)),
-              Text('My PHOTOS'),
-            ],
+          const SizedBox(
+            height: 10,
           ),
-          GridView.builder(
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3,
+          const Text(
+            'My photos',
+            style: TextStyle(
+              fontFamily: 'Poppins',
+              fontSize: 10,
+              color: Colors.black,
+              fontWeight: FontWeight.w500,
             ),
-            itemCount: 6,
-            itemBuilder: (BuildContext context, int index) {
-              return Image.asset(
-                'images/1.jpg',
-                fit: BoxFit.cover,
-              );
-            },
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                      child:
+                          Image.asset(width: 100, height: 100, 'images/1.jpg')),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                      child:
+                          Image.asset(width: 100, height: 100, 'images/2.jpg')),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                      child:
+                          Image.asset(width: 100, height: 100, 'images/3.jpg')),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                ],
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                      child:
+                          Image.asset(width: 100, height: 100, 'images/4.jpg')),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                      child:
+                          Image.asset(width: 100, height: 100, 'images/5.jpg')),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                      child:
+                          Image.asset(width: 100, height: 100, 'images/6.jpg')),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                ],
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                      child:
+                          Image.asset(width: 100, height: 100, 'images/7.jpg')),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                      child:
+                          Image.asset(width: 100, height: 100, 'images/8.jpg')),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                      child:
+                          Image.asset(width: 100, height: 100, 'images/9.jpg')),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                ],
+              ),
+            ],
           ),
         ],
       ),
